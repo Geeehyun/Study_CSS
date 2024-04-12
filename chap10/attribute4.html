@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {list-style: none;}
+        li {padding: 5px 30px;}
+        li a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+        }
+        a[target = _blank] {
+            padding-right: 30px;
+        }
+        #google[href] {
+            color: blue;        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.naver.com" target="_blank">네이버</a></li>
+        <li><a href="https://www.daum.net" target="_self">다음</a></li>
+        <li><a href="https://www.google.com" target="_top" id="google">구글</a></li>
+    </ul>
+</body>
+</html>

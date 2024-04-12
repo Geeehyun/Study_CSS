@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지 속성</title>
+    <style>
+        #container {
+            width: 1100px;
+            margin: 50px auto;
+        }
+        .box {
+            float: left;
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            background: url(/images/image2.jpeg) no-repeat left top;
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 2px black;
+            text-align: center;
+            line-height: 300px;
+        }
+        #bg1 {background-size: auto;}
+        #bg2 {background-size: 200px;}
+        #bg3 {background-size: 50%;}
+        #bg4 {background-size: 100% 100%;}
+        #bg5 {background-size: contain;}
+        #bg6 {background-size: cover;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="bg1" class="box">auto</div>
+        <div id="bg2" class="box">크기지정 1</div>
+        <div id="bg3" class="box">크기지정 2</div>
+        <div id="bg4" class="box">크기지정 3</div>
+        <div id="bg5" class="box">contain</div>
+        <div id="bg6" class="box">cover</div>
+    </div>
+</body>
+</html>

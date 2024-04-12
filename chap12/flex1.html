@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible</title>
+    <style>
+        h2 {margin: 0;}
+        .container {
+            width: 700px;
+            display: inline-flex;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 30px;
+        }
+        .box {
+            padding: 5px 45px;
+            margin: 5px;
+            width: 80px;
+        }
+        .box:nth-child(1) {background-color: pink;}
+        .box:nth-child(2) {background-color: limegreen;}
+        .box:nth-child(3) {background-color: skyblue;}
+        #op1 {flex-direction: row;}
+        #op2 {flex-direction: row-reverse;}
+        #op3 {flex-direction: column;}
+        #op4 {flex-direction: column-reverse;}
+        p {
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>flex-direction: row</h2>
+    <div class="container" id="op1">
+        <div class="box"><p>p 태그 1</p></div>
+        <div class="box"><p>p 태그 2</p></div>
+        <div class="box"><p>p 태그 3</p></div>
+    </div>
+    <h2>flex-direction: row-reverse</h2>
+    <div class="container" id="op2">
+        <div class="box"><p>p 태그 1</p></div>
+        <div class="box"><p>p 태그 2</p></div>
+        <div class="box"><p>p 태그 3</p></div>
+    </div>
+    <h2>flex-direction: column;</h2>
+    <div class="container" id="op3">
+        <div class="box"><p>p 태그 1</p></div>
+        <div class="box"><p>p 태그 2</p></div>
+        <div class="box"><p>p 태그 3</p></div>
+    </div>
+    <h2>flex-direction: column-reverse;</h2>
+    <div class="container" id="op4">
+        <div class="box"><p>p 태그 1</p></div>
+        <div class="box"><p>p 태그 2</p></div>
+        <div class="box"><p>p 태그 3</p></div>
+    </div>
+</body>
+</html>

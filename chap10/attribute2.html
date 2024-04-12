@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {list-style: none;}
+        li {
+            padding: 5px 30px;
+        }
+        li a {
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+        a[target=_blank] {
+            background: url(/images/icon.png) no-repeat center right;
+            background-size: 20px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://html.spec.whatwg.org" target="_blank">HTML</a></li>
+        <li><a href="https://www.naver.com">naver.com</a></li>
+        <li><a href="https://www.daum.net">daum.net</a></li>
+    </ul>
+</body>
+</html>

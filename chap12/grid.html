@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: grid;
+            grid-template: repeat(5, 1fr) / repeat(3, 200px);
+            grid-gap: 10px;
+        }
+        .items {
+            padding: 10px;
+            background-color: #eee;
+        }
+        .items:nth-child(odd) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">
+            태그 1<br>
+
+        </div>
+        <div class="items">
+            태그 2
+        </div>
+        <div class="items">
+            태그 3
+        </div>
+        <div class="items">
+            태그 4
+        </div>
+        <div class="items">
+            태그 5
+        </div>
+        <div class="items">
+            태그 6
+        </div>
+    </div>
+</body>
+</html>

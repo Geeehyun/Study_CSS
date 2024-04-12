@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex align</title>
+    <style>
+        h2 {margin: 0 0 1px 0;}
+        .container {
+            width: 600px;
+            height: 105px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 10px;
+        }
+        #opt1 {align-content: flex-start;}
+        #opt2 {align-content: flex-end;}
+        #opt3 {align-content: center;}
+        #opt4 {align-content: space-between;}
+        #opt5 {align-content: space-around;}
+        #opt6 {align-content: stretch;}
+        .box {
+            padding: 1px 1px;
+            margin: 1px;
+            background-color: #222;
+            width: 200px;
+            height: auto;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>align-content: flex-start</h2>
+    <div id="opt1" class="container">
+        <div class="box">
+            <p>p 태그 1</p>
+        </div>
+        <div class="box">
+            <p>p 태그 2</p>
+        </div>
+        <div class="box">
+            <p>p 태그 3</p>
+        </div>
+        <div class="box">
+            <p>p 태그 4</p>
+        </div>
+    </div>
+    <h2>align-content: flex-end</h2>
+    <div id="opt2" class="container">
+        <div class="box">
+            <p>p 태그 1</p>
+        </div>
+        <div class="box">
+            <p>p 태그 2</p>
+        </div>
+        <div class="box">
+            <p>p 태그 3</p>
+        </div>
+        <div class="box">
+            <p>p 태그 4</p>
+        </div>
+    </div>
+    <h2>align-content: center</h2>
+    <div id="opt3" class="container">
+        <div class="box">
+            <p>p 태그 1</p>
+        </div>
+        <div class="box">
+            <p>p 태그 2</p>
+        </div>
+        <div class="box">
+            <p>p 태그 3</p>
+        </div>
+        <div class="box">
+            <p>p 태그 4</p>
+        </div>
+    </div>
+    <h2>align-content: space-between</h2>
+    <div id="opt4" class="container">
+        <div class="box">
+            <p>p 태그 1</p>
+        </div>
+        <div class="box">
+            <p>p 태그 2</p>
+        </div>
+        <div class="box">
+            <p>p 태그 3</p>
+        </div>
+        <div class="box">
+            <p>p 태그 4</p>
+        </div>
+    </div>
+    <h2>align-content: space-around</h2>
+    <div id="opt5" class="container">
+        <div class="box">
+            <p>p 태그 1</p>
+        </div>
+        <div class="box">
+            <p>p 태그 2</p>
+        </div>
+        <div class="box">
+            <p>p 태그 3</p>
+        </div>
+        <div class="box">
+            <p>p 태그 4</p>
+        </div>
+    </div>
+    <h2>align-content: stretch</h2>
+    <div id="opt6" class="container">
+        <div class="box">
+            <p>p 태그 1</p>
+        </div>
+        <div class="box">
+            <p>p 태그 2</p>
+        </div>
+        <div class="box">
+            <p>p 태그 3</p>
+        </div>
+        <div class="box">
+            <p>p 태그 4</p>
+        </div>
+    </div>
+</body>
+</html>

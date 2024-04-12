@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #container {
+            width: 500px;
+            margin: 20px auto;
+        }
+        #container > div {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+            border: 1px solid transparent;
+
+        }
+        #box1 {
+            background: greenyellow;
+
+        }
+        #box1:hover {
+            animation-name: shape;
+            animation-duration: 3s;
+        }
+        #box2 {
+            background-color: blueviolet;
+            transition: ease-in-out;
+        }
+        #box2:hover {
+            animation-name: rotate;
+            animation-duration: 3s;
+        }
+        @keyframes shape {
+            from {border: 1px solid transparent;}
+            to {
+                border: 1px solid #000;
+                border-radius: 50%;
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+                border: 1px solid transparent;
+            }
+            to {
+                transform: rotate(500deg);
+                border: 1px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

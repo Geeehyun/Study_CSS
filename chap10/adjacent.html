@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조합 선택자 - 인접 형제 선택자</title>
+    <style>
+        body {background-color: #eee;}
+        section {
+            width: 600px;
+            margin: 20px auto;
+        }
+        p {
+            width: 500px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+        h1 + p {
+            background-color: pink;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>H1 태그 영역1 입니다.</h1>
+            <p>H1 태그 바로 옆 p 태그 입니다.</p>
+        </div>
+        <h1>H1 태그 영역2 입니다.</h1>
+        <div>
+            <p>h1 - div > p 태그 입니다.</p>
+        </div>
+        <p>section > p 태그 영역입니다.</p>
+        <h1>H1 태그 영역3 입니다.</h1>
+        <p>section > p 태그 영역입니다.</p>
+    </section>
+    <p>p 태그 영역 입니다.</p>
+</body>
+</html>

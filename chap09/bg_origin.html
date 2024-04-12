@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div>div {
+            width: 1000px;
+            height: 250px;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow: auto;
+            background: url(/images/icon2.png) no-repeat right top;
+            background-size: contain;
+            border: 20px solid rgba(255, 192, 203, 0.4);
+        }
+        body {
+            background: url(/images/icon.png) no-repeat fixed bottom right;
+        }
+        #bg1 {
+            background-origin: border-box;
+        }
+        #bg2 {
+            background-origin: padding-box;
+        }
+        #bg3 {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="bg1">
+            <h2>배경 이미지 타이틀 1</h2>
+            <h3>타이틀</h3>
+            <p>배경 이미지 오리진 테스트를 위한 태그 입니다.</p>
+        </div>
+        <div id="bg2">
+            <h2>배경 이미지 타이틀 2</h2>
+            <h3>타이틀</h3>
+            <p>배경 이미지 오리진 테스트를 위한 태그 입니다.</p>
+        </div>
+        <div id="bg3">
+            <h2>배경 이미지 타이틀 3</h2>
+            <h3>타이틀</h3>
+            <p>배경 이미지 오리진 테스트를 위한 태그 입니다.</p>
+        </div>
+    </div>
+</body>
+</html>

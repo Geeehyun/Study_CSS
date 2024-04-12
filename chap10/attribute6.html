@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {list-style: none;}
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+        li a {
+            text-decoration: none;
+            padding: 5px 20px;
+            font-size: 14px;
+            color: blue;
+        }
+        a[title ^= eng] {
+            background-color: yellow;
+        }
+        a[title ^= chi] {
+            background-color: violet;
+        }
+        a[title ^= jap] {
+            background-color: chocolate;
+        }
+        a[title ^= kor] {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>^문자열 검색</li>
+        <li><a href="#" title="english">영어</a></li>
+        <li><a href="#" title="japaness">일본어</a></li>
+        <li><a href="#" title="chinese">중국어</a></li>
+        <li><a href="#" title="korean">한국어</a></li>
+        <li><a href="#" title="english-history">영미문학사</a></li>
+        <li><a href="#" title="japaness-history">일본사</a></li>
+        <li><a href="#" title="chinese-history">중국사</a></li>
+        <li><a href="#" title="korean-history">한국사</a></li>
+    </ul>
+</body>
+</html>

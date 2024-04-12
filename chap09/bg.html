@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        .bg {
+            border: 5px dotted red;
+            background-color: skyblue;
+            background: url(/images/image1.jpeg) no-repeat;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px;
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        #border {
+            background-clip: border-box;
+        }
+
+        #padding {
+            background-clip: padding-box;
+        }
+
+        #content {
+            background-clip: border-box;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg" id="border">
+        <h1>border-box</h1>
+        <p>보더 영역까지 꽉 꽉 채우는 속성입니다.(기본값)</p>
+    </div>
+    <div class="bg" id="padding">
+        <h1>padding-box</h1>
+        <p>패딩 영역까지만 채우는 속성입니다.</p>
+    </div>
+    <div class="bg" id="content">
+        <h1>content-box</h1>
+        <p>콘텐츠 영역까지만 채우는 속성입니다.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {list-style: none;}
+        li > a {
+            line-height: 30px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+            padding-right: 30px;
+        }
+        a[title $= hwp] {
+            background: url(/images/icon.png) no-repeat right center;
+            background-size: 20px;
+        }
+        a[title $= xsl] {
+            background: url(/images/icon.png) no-repeat right center;
+            background-size: 20px;
+        }
+        a[title $= ppt] {
+            background: url(/images/icon.png) no-repeat right center;
+            background-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" title="한글파일.hwp">한글파일 hwp</a></li>
+        <li><a href="#" title="한글파일.hwpx">한글파일 hwpx</a></li>
+        <li><a href="#" title="엑셀.xsl">엑셀파일 xsl</a></li>
+        <li><a href="#" title="엑셀.xsls">엑셀파일 xsls</a></li>
+        <li><a href="#" title="파워포인트파일.ppt">파워포인트 ppt</a></li>
+        <li><a href="#" title="파워포인트파일.pptx">파워포인트 pptx</a></li>
+    </ul>
+</body>
+</html>

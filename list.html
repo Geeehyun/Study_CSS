@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .container {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .container > ul > li > span {
+            font-size: larger;
+        }
+        #target > ul {
+            list-style-type: none;
+        }
+        #target > ul > li > span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>리스트 스타일1</h1>
+        <ul>
+            <li><span>리스트 1</span> - 리스트 스타일 테스트</li>
+            <li><span>리스트 2</span> - 리스트 스타일 테스트</li>
+            <li><span>리스트 3</span> - 리스트 스타일 테스트</li>
+        </ul>
+    </div>
+
+    <div class="container" id="target">
+        <h1>리스트 스타일2</h1>
+        <ul>
+            <li><span>리스트 1</span> - 리스트 스타일 테스트</li>
+            <li><span>리스트 2</span> - 리스트 스타일 테스트</li>
+            <li><span>리스트 3</span> - 리스트 스타일 테스트</li>
+        </ul>
+    </div>
+</body>
+</html>

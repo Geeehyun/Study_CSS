@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조합 선택자 - 하위 선택자</title>
+    <style>
+        body {
+            background: #eee;
+        }
+        section {
+            width: 600px;
+            margin: 20px auto;
+        }
+        p {
+            width: 500px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid blue;
+            line-height: 2;
+        }
+        section p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>예약 안내</h1>
+        <p>온라인 예약 페이지 준비 중입니다.</p>
+        <div>
+            <p>예약 방법 : 현금, 카드, 온라인이체</p>
+            <p>방 크기 : 2~4인실, 4~6인실, 6~8인실</p>
+            <p>가격 : 10000원/일/인</p>
+            <div>
+                <p>section > div > div > p</p>
+            </div>
+        </div>
+    </section>
+    <p>섹션 밖에 있는 p</p>
+</body>
+</html>

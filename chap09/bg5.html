@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 배경 속성</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+        .parent {
+            width: 960px;
+            height: 480px;
+            border: 1px solid red;
+            overflow: scroll;
+        }
+        .child {
+            height: 1440px;
+            background: url(/images/image1.jpeg);
+            background-attachment: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
